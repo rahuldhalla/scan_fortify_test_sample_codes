@@ -13,6 +13,7 @@ int testprintf(char *buffer, size_t bufsz, const char *format, ...);
  * Custom testprintf implementation
  */
 int testprintf(char *buffer, size_t bufsz, const char *format, ...)
+__attribute__((format(printf, 3, 4)))
 {
     va_list vlist;
     int formatted_length = 0;

@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+int writeformatted(char* buffer, int bufferSize, const char * const format, ...) 
+    __attribute__((format(printf, 3, 4)));
+
 int writeformatted(char* buffer, int bufferSize, const char *format, ...)
 {
     int len = 0;

@@ -21,7 +21,7 @@ int main() {
     printf("Safe addition result: %d\n", len);
 
     // Allocate memory safely
-    char *buffer = (char *)malloc((size_t)len);
+    char *buffer = (char *)malloc(len);
     if (buffer == NULL) {
         printf("Error: Memory allocation failed.\n");
         return EXIT_FAILURE;
